@@ -12,27 +12,21 @@ public class FahrenheitToCelsiusConversion {
 		double ftempa;
 		double ftempb;
 		double ftempc; 
-		double conversiona;
-		double conversionb;
-		double conversionc;
 	
 		System.out.println("What temperature in fahrenhite is it at 8 a.m.? ");
 		ftempa= input.nextDouble();
-		conversiona= (ftempa-32)/1.8; 
-		System.out.println("The conversion from " + ftempa + " degrees fahrenhite to Celsius is " + conversiona); 
+		displayConversion (ftempa);
 		System.out.println("What temperature in fahrenhite is it at 12 p.m.? ");
 		ftempb= input.nextDouble();
-		conversionb= (ftempb-32)/1.8; 
-		System.out.println("The conversion from " + ftempb + " degrees fahrenhite to Celsius is " + conversionb);
+		displayConversion (ftempb);
 		System.out.println("What temperature in fahrenhite is it at 5 p.m.? ");
 		ftempc= input.nextDouble();
-		conversionc= (ftempc-32)/1.8; 
-		System.out.println("The conversion from " + ftempc + " degrees fahrenheit to Celsius is " + conversionc);
-		
-	
-
-
+		displayConversion (ftempc);
 		
 	}
-
+public static void displayConversion (double ftemp) {
+	double conversion;	
+	conversion= (ftemp-32)/1.8; 
+	System.out.println("The conversion from " + ftemp + " degrees fahrenhite to Celsius is " + conversion); 
+	}
 }
