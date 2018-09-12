@@ -20,7 +20,7 @@ public static void displayConversion(int inches)	{
 		final int INCHES_IN_FOOT = 12;
 		feet = inches / INCHES_IN_FOOT;
 		inchesLeft = inches % INCHES_IN_FOOT;
-		System.out.println(inches + " inches is "
+		System.out.println(inches + " inches is " +
 		feet + " feet and " + inchesLeft + " inches"); 
 	}
 }
