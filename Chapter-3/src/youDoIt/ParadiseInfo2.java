@@ -8,17 +8,21 @@ public class ParadiseInfo2 {
 		// TODO Auto-generated method stub
 		double price;
 		double discount;
-		
+		double savings; 
 		Scanner keyboard = new Scanner(System.in);
+		
 		System.out.println("Special this week on any service over " + price); 
-		System.out.println("Discount of  " + discount + " percent");
-		System.out.println("That's a savings of at least $" + savings); 
-		System.out.println("Enter cutoff price for discount >> ");
 		price = keyboard.nextDouble();
-		System.out.println("Enter discount rate as a whole number >> ");
+		System.out.println("Discount of  " + discount + " percent");
 		discount = keyboard.nextDouble();
+		System.out.println("That's a savings of at least $" + savings); 
+	
+		System.out.println("Enter cutoff price for discount >> ");
+		System.out.println("Enter discount rate as a whole number >> ");
+		
 		savings = computeDiscountInfo(price, discount); 
-		computeDiscountInfo();
+		computeDiscountInfo(price, discount);
+		displayInfo();
 	}
 
 	public static double computeDiscountInfo(double pr, double dscnt) 
@@ -27,8 +31,11 @@ public class ParadiseInfo2 {
 		double savings;
 		savings = pr * dscnt / 100;
 		return savings; 
-		System.out.println("Paradise Day Spa wants to pamper you. ");
-		System.out.println("We will make you look good. ");
+		
 	}
-
+	public static void displayInfo() {
+		
+	System.out.println("Paradise Day Spa wants to pamper you. ");
+	System.out.println("We will make you look good. ");
+	}
 }
