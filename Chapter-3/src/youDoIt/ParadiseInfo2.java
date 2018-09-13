@@ -11,14 +11,16 @@ public class ParadiseInfo2 {
 		double savings; 
 		Scanner keyboard = new Scanner(System.in);
 		
-		System.out.println("Special this week on any service over " + price); 
+		System.out.println("Enter cutoff price for discount >> "); 
 		price = keyboard.nextDouble();
-		System.out.println("Discount of  " + discount + " percent");
+		System.out.println("Enter discount rate as a whole number is >> ");
 		discount = keyboard.nextDouble();
+		
+		System.out.println("Special this week on any service over " + price);
+		System.out.println("Discount of " + discount + " percent");
 		System.out.println("That's a savings of at least $" + savings); 
 	
-		System.out.println("Enter cutoff price for discount >> ");
-		System.out.println("Enter discount rate as a whole number >> ");
+		
 		
 		savings = computeDiscountInfo(price, discount); 
 		computeDiscountInfo(price, discount);
