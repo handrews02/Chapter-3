@@ -40,6 +40,6 @@ public static void displayConversionToMiligrams(double lbs) {
 	lbsConversion = lbs * 453592.37;
 	
 	System.out.println("Your weight to Miligrams is " + lbsConversion + " miligrams"); 
+
 	}
-	
 }
