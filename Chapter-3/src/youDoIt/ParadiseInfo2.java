@@ -6,25 +6,23 @@ public class ParadiseInfo2 {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		double price;
-		double discount;
-		double savings; 
-		Scanner keyboard = new Scanner(System.in);
+	     double price;
+	     double discount;
+	     double savings;
+	     Scanner keyboard = new Scanner(System.in);
+	     System.out.print("Enter cutoff price for discount >> ");
+	     price = keyboard.nextDouble();     
+	     System.out.print("Enter discount rate as a whole number >> ");
+	     discount = keyboard.nextDouble();
+	     displayInfo();
+	     savings = computeDiscountInfo(price, discount); 
+	     System.out.println("Special this week on any service over " + price);
+	     System.out.println("Discount of " + discount + " percent");
+	     System.out.println("That's a savings of at least $" + savings); 
 		
-		System.out.println("Enter cutoff price for discount >> "); 
-		price = keyboard.nextDouble();
-		System.out.println("Enter discount rate as a whole number is >> ");
-		discount = keyboard.nextDouble();
 		
-		System.out.println("Special this week on any service over " + price);
-		System.out.println("Discount of " + discount + " percent");
-		System.out.println("That's a savings of at least $" + savings); 
-	
+
 		
-		
-		savings = computeDiscountInfo(price, discount); 
-		computeDiscountInfo(price, discount);
-		displayInfo();
 	}
 
 	public static double computeDiscountInfo(double pr, double dscnt) 
