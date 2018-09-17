@@ -24,7 +24,7 @@ public static void displayConversion(double GPA, String name){
 	double GPAConversion;
 	GPAConversion = GPA * 10;
 	
-	System.out.println(name + "Your reward for your " + GPA + " GPA " + )
+	System.out.println(name + "Your reward for your " + GPA + " GPA " + "is $" + GPAConversion );
 	
 }
 }
